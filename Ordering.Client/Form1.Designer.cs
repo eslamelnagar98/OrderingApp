@@ -38,13 +38,14 @@ namespace Ordering.Client
             this.btnOrder = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.DataFeedGrid = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataFeedGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // txtAccount
@@ -118,6 +119,7 @@ namespace Ordering.Client
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.lblStatus);
             this.tabPage1.Controls.Add(this.LblAccount);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.btnOrder);
@@ -134,27 +136,14 @@ namespace Ordering.Client
             this.tabPage1.Text = "Submission";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // lblStatus
             // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 421);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Blotter";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(786, 415);
-            this.dataGridView1.TabIndex = 0;
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(12, 382);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(56, 17);
+            this.lblStatus.TabIndex = 1;
+            this.lblStatus.Text = "Status: ";
             // 
             // button1
             // 
@@ -165,6 +154,28 @@ namespace Ordering.Client
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.DataFeedGrid);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 421);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Blotter";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // DataFeedGrid
+            // 
+            this.DataFeedGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataFeedGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataFeedGrid.Location = new System.Drawing.Point(3, 3);
+            this.DataFeedGrid.Name = "DataFeedGrid";
+            this.DataFeedGrid.RowHeadersWidth = 51;
+            this.DataFeedGrid.RowTemplate.Height = 24;
+            this.DataFeedGrid.Size = new System.Drawing.Size(786, 415);
+            this.DataFeedGrid.TabIndex = 0;
             // 
             // Form1
             // 
@@ -178,7 +189,7 @@ namespace Ordering.Client
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataFeedGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,8 +206,9 @@ namespace Ordering.Client
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DataFeedGrid;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 

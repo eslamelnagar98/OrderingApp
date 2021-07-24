@@ -10,6 +10,8 @@ namespace Ordering.Server.Contract
     public class oEnvelop
     {
         public _MessageType MessageType;
+        public _MessageDestination MessageDestination;
+
         /// <summary>
         /// Identify this message as client message not DM while handling in OMS Server
         /// </summary>

@@ -7,15 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Service", "Orderin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Data", "Ordering.Data\Ordering.Data.csproj", "{B0EBFA10-9E88-4A5C-BA71-9B27C72A2DC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Entities", "Ordering.Entities\Ordering.Entities.csproj", "{89E8419B-745A-49FF-9C8D-2E57506EB90D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.BaseLibrary", "Ordering.Entities\OMS.BaseLibrary.csproj", "{89E8419B-745A-49FF-9C8D-2E57506EB90D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.SelfHost", "Ordering.SelfHost\Ordering.SelfHost.csproj", "{AF5CCF0D-8903-4FE1-9F53-DFEEFD23C17B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Client", "Ordering.Client\Ordering.Client.csproj", "{037E0716-726B-4B06-B421-DB2306229AE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Client", "Ordering.Client\OMS.Client.csproj", "{037E0716-726B-4B06-B421-DB2306229AE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.WindowsService", "Ordering.WindowsService\Ordering.WindowsService.csproj", "{76EE814D-3CFC-47E6-ACD6-F3ECDA2D0677}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService.hoster", "Ordering.WindowsService\OrderService.hoster.csproj", "{76EE814D-3CFC-47E6-ACD6-F3ECDA2D0677}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Server", "Ordering.Server\Ordering.Server.csproj", "{9FE5EEAC-A605-4409-8857-0EBE7B81EF44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Server", "Ordering.Server\OMS.Server.csproj", "{9FE5EEAC-A605-4409-8857-0EBE7B81EF44}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Calc.Api", "Ordering.Calc.Api\Ordering.Calc.Api.csproj", "{BDD899EA-12BF-4046-A48C-646E81E15A44}"
 EndProject

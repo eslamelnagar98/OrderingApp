@@ -64,9 +64,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ordering.Entities\Ordering.Entities.csproj">
+    <ProjectReference Include="..\Ordering.Entities\OMS.BaseLibrary.csproj">
       <Project>{89e8419b-745a-49ff-9c8d-2e57506eb90d}</Project>
-      <Name>Ordering.Entities</Name>
+      <Name>OMS.BaseLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

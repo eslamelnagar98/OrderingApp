@@ -116,14 +116,13 @@ namespace Ordering.Server.Contract
             {
                 case _MessageType.ClientLogIn:
                     return (new oClientLogIn().Deserialize(BaseStream));
-                    break;
                 case _MessageType.UserInfo:
                     return (new oUserInfo().Deserialize(BaseStream));
-                    break;
+                case _MessageType.DataFeed:
+                    return (new o_orderData().Deserialize(BaseStream));
              
                 default:
                     return new BinaryFormatter().Deserialize(BaseStream);
-                    break;
             }
         }
     } // SerializationReader

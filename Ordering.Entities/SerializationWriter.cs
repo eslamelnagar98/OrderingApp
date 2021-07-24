@@ -202,7 +202,22 @@ namespace Ordering.Server.Contract
             }
             else
             {
-                new BinaryFormatter().Serialize(BaseStream, obj);
+                switch (MessageType)
+                {
+                    case _MessageType.ClientLogIn:
+                        ((oClientLogIn)obj).Serialize(BaseStream);
+                        break;
+                    case _MessageType.UserInfo:
+                        ((oUserInfo)obj).Serialize(BaseStream);
+                        break;
+                    case _MessageType.DataFeed:
+                        ((o_orderData)obj).Serialize(BaseStream);
+                        break;
+
+                    default:
+                        new BinaryFormatter().Serialize(BaseStream, obj);
+                        break;
+                }
             }
         }
 

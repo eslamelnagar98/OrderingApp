@@ -13,7 +13,6 @@ namespace Ordering.Server
 {
     public partial class Service1 : ServiceBase
     {
-        clsTcpServer o_clsServer;
 
         private readonly Logger m_Logger = LogManager.GetCurrentClassLogger();
         public Service1()
@@ -25,12 +24,12 @@ namespace Ordering.Server
         {
             try
             {
-                clsTcpServer clsTcpServer = new clsTcpServer();
-                clsTcpServer.ListenToQueue();
+                clsTcpServer o_clsTcpServer = new clsTcpServer();
+                o_clsTcpServer.ListenToQueue();
                 m_Logger.Info($"Starting {this.ServiceName}....");
 
                 m_Logger.Debug($"Initializing service {this.ServiceName}...");
-                Initialize();
+                //Initialize();
 
                 m_Logger.Info($"{this.ServiceName} service started successfully!");
             }
@@ -49,11 +48,7 @@ namespace Ordering.Server
             }
         }
 
-        private void Initialize()
-        {
-            m_Logger.Debug($"Constructing clsServer in service {this.ServiceName}");
-            o_clsServer = new clsTcpServer();
-        }
+       
 
         protected override void OnStop()
         {
@@ -61,7 +56,6 @@ namespace Ordering.Server
             {
                 m_Logger.Info("Stopping service {0}...", this.ServiceName);
 
-               // o_clsServer.Close();
 
                 m_Logger.Info("Service {0} stopped successfully", this.ServiceName);
             }

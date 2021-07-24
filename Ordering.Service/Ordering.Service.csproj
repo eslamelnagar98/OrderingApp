@@ -72,7 +72,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,9 +79,9 @@
       <Project>{B0EBFA10-9E88-4A5C-BA71-9B27C72A2DC0}</Project>
       <Name>Ordering.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ordering.Entities\Ordering.Entities.csproj">
+    <ProjectReference Include="..\Ordering.Entities\OMS.BaseLibrary.csproj">
       <Project>{89E8419B-745A-49FF-9C8D-2E57506EB90D}</Project>
-      <Name>Ordering.Entities</Name>
+      <Name>OMS.BaseLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

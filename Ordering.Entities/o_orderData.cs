@@ -34,8 +34,12 @@ namespace Ordering.Server
 
             return this;
         }
-
         #endregion
+
+        public override string ToString()
+        {
+            return $"Quantity: {Quantity}, Price:{Price}, Account:{Account}";
+        }
     }
 
 }

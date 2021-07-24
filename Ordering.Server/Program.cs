@@ -16,7 +16,8 @@ namespace Ordering.Server
         {
             clsTcpServer clsTcpServer = new clsTcpServer();
             clsTcpServer.ListenToQueue();
-            //System.Diagnostics.Debugger.Launch();
+            Console.ReadLine();
+            // System.Diagnostics.Debugger.Launch();
 
             //ServiceBase[] ServicesToRun;
             //ServicesToRun = new ServiceBase[]
